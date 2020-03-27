@@ -1,6 +1,7 @@
 {
-	"name": "@guardian/{{dashCase name}}",
+	"name": "@guardian/{{dashCase moduleName}}",
 	"version": "1.0.0",
+	"description": "{{moduleDescription}}",
 	"main": "dist/index.js",
 	"module": "dist/index.esm.js",
 	"scripts": {
@@ -16,8 +17,8 @@
 		"@babel/preset-env": "^7.8.0",
 		"@babel/preset-react": "^7.8.0",
 		"@babel/preset-typescript": "^7.8.0",
-		"@emotion/babel-preset-css-prop": "^10.0.14",
-		{{#if srcFoundations}}"@guardian/src-foundations": "^0.16.0",{{/if}}
+		"@emotion/babel-preset-css-prop": "^10.0.14",{{#if srcFoundations}}
+		"@guardian/src-foundations": "^0.16.0",{{/if}}
 		"rollup": "^1.17.0",
 		"rollup-plugin-babel": "^4.3.3",
 		"rollup-plugin-commonjs": "^10.0.2",
